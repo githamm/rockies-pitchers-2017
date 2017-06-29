@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -8,9 +7,7 @@
     <title>Colorado Rockcies Pitching | The Denver Post</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.js"></script>
-    <!--     <script src="http://d3js.org/d3.v3.min.js " charset="utf-8 "></script>
- -->
-    <script src="d3.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js " charset="utf-8 "></script>
     <style>
     svg {
         overflow-x: scroll;
@@ -20,6 +17,7 @@
         /*width: 2000px;*/
         height: 500px;
     }
+    
     .c3-ygrid-line line {
         stroke: red;
     }
@@ -80,7 +78,11 @@
             },
             y: {
                 show: true,
-                lines: [{value: 6, text: '6 innings', axis: 'y2'}]
+                lines: [{
+                    value: 6,
+                    text: '6 innings',
+                    axis: 'y2'
+                }]
             },
         },
         legend: {
@@ -114,9 +116,9 @@
         //         axis: 'y2',
         //         start: 6
         //     }]
-            // subchart: {
-            //     show: true
-            // }
+        // subchart: {
+        //     show: true
+        // }
     });
     // pitcherStats.data.colors({
     //     'Number of pitches': '#ddd',
